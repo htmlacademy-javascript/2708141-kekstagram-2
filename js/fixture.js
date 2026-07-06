@@ -51,12 +51,12 @@ function generatePhotoDescriptions() {
         avatar: `img/avatar-${randomAvatarValue}.svg`,
       });
 
-      count++;
+      count += 1;
     }
 
     // eslint-disable-next-line no-console
     console.table(commentsArray);
-    count--;
+    count -= 1;
     resultPhotoDescriptionArray.push({
       id: i,
       url: `photos/${i}.jpg`,
