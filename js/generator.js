@@ -1,5 +1,5 @@
 import {COMMENTS, NAMES, NUMBERS} from './dataArrays.js';
-import {randomValue} from './utils.js';
+import {randomValue, randomValues} from './utils.js';
 
 export const photoDescription = function (commentsValue, minLikesValue, maxLikesValue, avatarsValue) {
 
@@ -7,7 +7,7 @@ export const photoDescription = function (commentsValue, minLikesValue, maxLikes
   const photoDescriptionArray = [];
 
   for (let i = 1; i < commentsValue; i += 1) {
-    const randomLikesValue = randomValue(minLikesValue, maxLikesValue);
+    const randomLikesValue = randomValues(minLikesValue, maxLikesValue);
     const randomCommentsValue = randomValue(COMMENTS.length);
 
     const commentsArray = [];
